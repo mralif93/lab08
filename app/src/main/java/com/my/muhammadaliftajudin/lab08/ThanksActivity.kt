@@ -27,8 +27,15 @@ class ThanksActivity : AppCompatActivity() {
         // Components
         val nameTextView = binding.nameTextView;
         val phoneTextView = binding.phoneTextView;
+        val sizeTextView = binding.sizeTextView;
+        val pickupDateTextView = binding.pickupDateTextView;
+        val pickupTimeTextView = binding.pickupTimeTextView;
 
         nameTextView.text = intent.getStringExtra("name")
         phoneTextView.text = intent.getStringExtra("phone")
+        sizeTextView.text = intent.getStringExtra("size")
+        pickupTimeTextView.text = intent.getStringExtra("date")
+        pickupTimeTextView.text = intent.getStringExtra("time")
+
     }
 }

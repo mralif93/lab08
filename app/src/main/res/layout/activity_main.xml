@@ -86,9 +86,11 @@
             android:id="@+id/pizzaSeekBar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2" />
+            android:layout_weight="2"
+            android:max="4"/>
 
         <TextView
+            android:id="@+id/pizzaSizeTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
