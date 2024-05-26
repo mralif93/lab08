@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">lab08</string>
     <string name="android_atc_pizza_shop">Android ATC Pizza Shop</string>
     <string name="schedule_for_a_pickup">Schedule for a Pickup</string>
     <string name="full_name">Full Name</string>

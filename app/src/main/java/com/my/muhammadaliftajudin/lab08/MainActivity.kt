@@ -2,6 +2,7 @@ package com.my.muhammadaliftajudin.lab08
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.widget.DatePicker
 import androidx.activity.enableEdgeToEdge
@@ -32,8 +33,11 @@ class MainActivity : AppCompatActivity() {
         // Date Button
         var dateButton = binding.dateBtn;
         var timeButton = binding.timeBtn;
+        var scheduleButton = binding.scheduleBtn;
         var dateTextView = binding.dateTextView;
         var timeTextView = binding.timeTextView;
+        var nameEditText = binding.nameEditText;
+        var phoneEditText = binding.phoneEditText;
 
         dateButton.setOnClickListener {
             val c = Calendar.getInstance()
@@ -56,6 +60,14 @@ class MainActivity : AppCompatActivity() {
                 TimePickerDialog.OnTimeSetListener { TimePicker, hourOfDay, minute ->
                     timeTextView.text = "$hourOfDay:$minute"}, hour, minutes, true)
             myTimePicker.show()
+        }
+
+        scheduleButton.setOnClickListener {
+            // create a new intent / new page
+            val intent = Intent(this, ThanksActivity::class.java)
+            intent.putExtra("name", nameEditText.text.toString())
+            intent.putExtra("phone", phoneEditText.text.toString())
+            startActivity(intent)
         }
     }
 }

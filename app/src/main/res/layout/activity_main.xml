@@ -14,32 +14,32 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="20sp"
-        android:text="Android ATC Pizza Shop" />
+        android:text="@string/android_atc_pizza_shop" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Schedule a Pickup" />
+        android:layout_marginTop="@dimen/_32dp"
+        android:text="@string/schedule_for_a_pickup" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/_16dp"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Full Name:" />
+            android:text="@string/full_name" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:inputType="text"
-            android:hint="Enter Your Full Name"
+            android:hint="@string/enter_your_full_name"
             android:id="@+id/nameEditText" />
     </LinearLayout>
 
@@ -52,13 +52,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Phone No.:" />
+            android:text="@string/phone_no" />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:inputType="text"
-            android:hint="Enter Your Phone No."
+            android:inputType="number"
+            android:hint="@string/enter_your_phone_no"
             android:id="@+id/phoneEditText" />
     </LinearLayout>
 
@@ -68,13 +68,13 @@
         android:layout_marginTop="32dp"
         android:textSize="13sp"
         android:gravity="center"
-        android:text="Price: Small: RM5, Medium: RM8, Large: RM11, Extra Large: RM14"/>
+        android:text="@string/price_small_rm5_medium_rm8_large_rm11_extra_large_rm14"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Select Your Pizza Size:" />
+        android:text="@string/select_your_pizza_size" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -107,14 +107,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginEnd="8dp"
-            android:text="Select Date" />
+            android:text="@string/select_date" />
 
         <Button
             android:id="@+id/timeBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Select Time" />
+            android:text="@string/select_time" />
     </LinearLayout>
 
     <LinearLayout
@@ -128,7 +128,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="e.g. 25/05/2024" />
+            android:text="@string/e_g_25_05_2024" />
 
         <TextView
             android:id="@+id/timeTextView"
@@ -136,14 +136,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="e.g. 04:30 PM" />
+            android:text="@string/e_g_04_30_pm" />
 
     </LinearLayout>
 
     <Button
+        android:id="@+id/scheduleBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Schedule"/>
+        android:text="@string/schedule"/>
 
 </LinearLayout>
