@@ -30,12 +30,19 @@ class ThanksActivity : AppCompatActivity() {
         val sizeTextView = binding.sizeTextView;
         val pickupDateTextView = binding.pickupDateTextView;
         val pickupTimeTextView = binding.pickupTimeTextView;
+        val ratingButton = binding.ratingBtn;
+        val ratingBar = binding.ratingBar;
+        val ratingTextView = binding.ratingTextView;
 
         nameTextView.text = intent.getStringExtra("name")
         phoneTextView.text = intent.getStringExtra("phone")
         sizeTextView.text = intent.getStringExtra("size")
-        pickupTimeTextView.text = intent.getStringExtra("date")
+        pickupDateTextView.text = intent.getStringExtra("date")
         pickupTimeTextView.text = intent.getStringExtra("time")
+        
+        ratingButton.setOnClickListener {
+            ratingTextView.text = ratingBar.rating.toString();
+        }
 
     }
 }

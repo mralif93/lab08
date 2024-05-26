@@ -112,6 +112,9 @@ class MainActivity : AppCompatActivity() {
                 myCalendar.set(Calendar.HOUR_OF_DAY, hourOfDay)
                 myCalendar.set(Calendar.MINUTE, minute)
 
+                // Formatted
+                // val hourFormatted = String.format()
+
                 // Set value to text view
                 timeTextView.text = "$hourOfDay:$minute"
             }
@@ -130,6 +133,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ThanksActivity::class.java)
             intent.putExtra("name", nameEditText.text.toString())
             intent.putExtra("phone", phoneEditText.text.toString())
+            intent.putExtra("size", pizzaSizeTextView.text.toString())
+            intent.putExtra("date", dateTextView.text.toString())
+            intent.putExtra("time", timeTextView.text.toString())
             startActivity(intent)
         }
     }

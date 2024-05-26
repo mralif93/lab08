@@ -125,18 +125,27 @@
         android:orientation="horizontal">
 
         <RatingBar
-            android:id="@+id/feedbackRatingBar"
+            android:id="@+id/ratingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
+            android:stepSize="0.5"
             android:numStars="5" />
 
         <Button
-            android:id="@+id/sendBtn"
+            android:id="@+id/ratingBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:text="Send" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/ratingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:gravity="center"
+        android:text="..." />
 
 </LinearLayout>
